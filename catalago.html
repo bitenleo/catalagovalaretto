@@ -36,20 +36,54 @@
             { id: 'recheadas', name: 'Recheadas' }
         ];
 
-        // ATENÇÃO: Verifique se os nomes das fotos na pasta "produtos" são iguais a estes:
         const products = [
-            { id: 1, category: 'esfihas', name: 'Esfiha de Carne (Fechada)', weight: '500g', price: 29.90, desc: 'Massa leve e recheio suculento.', image: './produtos/esfiha-carne.jpg' },
-            { id: 2, category: 'esfihas', name: 'Esfiha de Carne (Aberta)', weight: '500g', price: 29.90, desc: 'A clássica aberta com tempero especial.', image: './produtos/esfiha-aberta.jpg' },
-            { id: 3, category: 'esfihas', name: 'Esfiha de Escarola', weight: '500g', price: 29.90, desc: 'Escarola fresca com tempero da casa.', image: './produtos/esfiha-escarola.jpg' },
-            { id: 4, category: 'esfihas', name: 'Esfiha de Frango c/ Requeijão', weight: '500g', price: 29.90, desc: 'Frango desfiado com requeijão.', image: './produtos/esfiha-frango.jpg' },
-            { id: 5, category: 'esfihas', name: 'Esfiha de Queijo', weight: '500g', price: 29.90, desc: 'Mix de queijos selecionados.', image: './produtos/esfiha-queijo.jpg' },
-            { id: 6, category: 'empadas', name: 'Empada de Frango c/ Requeijão', weight: '500g', price: 39.90, desc: 'Massa podre que derrete na boca.', image: './produtos/empada-frango.jpg' },
-            { id: 7, category: 'empadas', name: 'Empada de Palmito', weight: '500g', price: 39.90, desc: 'Recheio cremoso de palmito.', image: './produtos/empada-palmito.jpg' },
-            { id: 8, category: 'tortas', name: 'Torta de Frango c/ Requeijão', weight: '1kg', price: 59.90, desc: 'Tamanho família, super recheada.', image: './produtos/torta-frango-1kg.jpg' },
-            { id: 9, category: 'tortas', name: 'Torta de Palmito', weight: '1kg', price: 59.90, desc: 'O sabor tradicional em 1kg.', image: './produtos/torta-palmito-1kg.jpg' },
-            { id: 14, category: 'massas-lisas', name: 'Massa para Lasanha', weight: '500g', price: 8.90, desc: 'Massa fresca, direto para o forno.', image: './produtos/massa-lasanha.jpg' },
-            { id: 18, category: 'recheadas', name: 'Rondelle Presunto e Mussarela', weight: '500g', price: 29.90, desc: 'O favorito das crianças.', image: './produtos/rondelle.jpg' },
-            { id: 25, category: 'prontas', name: 'Nhoque de Batata Tradicional', weight: '500g', price: 12.90, desc: 'Massa de batata legítima.', image: './produtos/nhoque.jpg' },
+            // Esfihas
+            { id: 1, category: 'esfihas', name: 'Esfiha de Carne (Fechada)', weight: '500g', price: 29.90, desc: 'Massa leve e recheio suculento.', image: './produtos/esfiha_de_carne_fechada.PNG' },
+            { id: 2, category: 'esfihas', name: 'Esfiha de Carne (Aberta)', weight: '500g', price: 29.90, desc: 'A clássica aberta com tempero especial.', image: './produtos/esfiha_de_carne_aberta.png' },
+            { id: 3, category: 'esfihas', name: 'Esfiha de Escarola', weight: '500g', price: 29.90, desc: 'Escarola fresca com tempero da casa.', image: './produtos/esfiha_de_escarola.png' },
+            { id: 4, category: 'esfihas', name: 'Esfiha de Frango c/ Requeijão', weight: '500g', price: 29.90, desc: 'Frango desfiado com requeijão cremoso.', image: './produtos/esfiha_de_frango_com_requeijao.png' },
+            { id: 5, category: 'esfihas', name: 'Esfiha de Queijo', weight: '500g', price: 29.90, desc: 'Mix de queijos selecionados.', image: './produtos/esfiha_de_queijo.png' },
+
+            // Empadas
+            { id: 6, category: 'empadas', name: 'Empada de Frango c/ Requeijão', weight: '500g', price: 39.90, desc: 'Massa podre que derrete na boca.', image: './produtos/empada_de_frango_com_requeijao.png' },
+            { id: 7, category: 'empadas', name: 'Empada de Palmito', weight: '500g', price: 39.90, desc: 'Recheio cremoso de palmito.', image: './produtos/empada_de_palmito.png' },
+
+            // Tortas 1kg
+            { id: 8, category: 'tortas', name: 'Torta de Frango c/ Requeijão', weight: '1kg', price: 59.90, desc: 'Tamanho família, super recheada.', image: './produtos/torta_de_frango_com_requeijao_1kg.png' },
+            { id: 9, category: 'tortas', name: 'Torta de Palmito', weight: '1kg', price: 59.90, desc: 'O sabor tradicional em 1kg.', image: './produtos/torta_de_palmito_1kg.png' },
+            { id: 10, category: 'tortas', name: 'Torta de Escarola', weight: '1kg', price: 59.90, desc: 'Escarola com tempero suave.', image: './produtos/torta_de_escarola_1kg.png' },
+
+            // Tortas 600g
+            { id: 11, category: 'tortas', name: 'Torta de Frango c/ Requeijão', weight: '600g', price: 38.90, desc: 'Recheio cremoso, porção média.', image: './produtos/torta_de_frango_com_requeijao_600g.png' },
+            { id: 12, category: 'tortas', name: 'Torta de Palmito', weight: '600g', price: 38.90, desc: 'Palmito selecionado, porção média.', image: './produtos/torta_de_palmito_600g.png' },
+            { id: 13, category: 'tortas', name: 'Torta de Escarola', weight: '600g', price: 38.90, desc: 'Deliciosa e leve, porção média.', image: './produtos/torta_de_escarola_600g.png' },
+
+            // Massas Lisas
+            { id: 14, category: 'massas-lisas', name: 'Massa para Lasanha e Canellone', weight: '500g', price: 8.90, desc: 'Massa fresca, direto para o forno.', image: './produtos/massa_para_lasanha_e_canellone.png' },
+            { id: 15, category: 'massas-lisas', name: 'Massa para Pastel (Disco)', weight: '500g', price: 8.90, desc: 'Praticidade para seus pastéis.', image: './produtos/massa_para_pastel_disco_500g.png' },
+            { id: 16, category: 'massas-lisas', name: 'Massa para Pastel (Rolo 1kg)', weight: '1kg', price: 13.90, desc: 'Crocante e sequinha.', image: './produtos/massa_para_pastel_rolo_1kg.png' },
+            { id: 17, category: 'massas-lisas', name: 'Massa para Pastel (Rolo 500g)', weight: '500g', price: 8.50, desc: 'Massa fresca em rolo.', image: './produtos/massa_para_pastel_rolo_500g.png' },
+            { id: 18, category: 'massas-lisas', name: 'Nhoque de Batata Tradicional', weight: '500g', price: 12.90, desc: 'Massa de batata legítima.', image: './produtos/nhoque_de_batata_tradicional.png' },
+
+            // Recheadas - Rondelle
+            { id: 19, category: 'recheadas', name: 'Rondelle de Espinafre', weight: '500g', price: 39.90, desc: 'Massa verde com recheio especial.', image: './produtos/rondelle_de_espinafre.png' },
+            { id: 20, category: 'recheadas', name: 'Rondelle Frango c/ Requeijão', weight: '500g', price: 29.90, desc: 'Massa fresca recheada.', image: './produtos/rondelle_frango_com_requeijao.png' },
+            { id: 21, category: 'recheadas', name: 'Rondelle Presunto e Mussarela', weight: '500g', price: 29.90, desc: 'O favorito das crianças.', image: './produtos/rondelle_presunto_e_mussarela.png' },
+            { id: 22, category: 'recheadas', name: 'Rondelle Quatro Queijos', weight: '500g', price: 29.90, desc: 'Para amantes de queijo.', image: './produtos/rondelle_quatro_queijos.png' },
+
+            // Recheadas - Canellone
+            { id: 23, category: 'recheadas', name: 'Canellone Presunto e Mussarela', weight: '500g', price: 29.90, desc: 'Tradicional canellone artesanal.', image: './produtos/canellone_presunto_e_mussarela.png' },
+            { id: 24, category: 'recheadas', name: 'Canellone Quatro Queijos', weight: '500g', price: 29.90, desc: 'Massa recheada com mix de queijos.', image: './produtos/canellone_quatro_queijos.png' },
+
+            // Recheadas - Conchiglione
+            { id: 25, category: 'recheadas', name: 'Conchiglione Frango c/ Requeijão', weight: '500g', price: 39.90, desc: 'Formato de concha, muito recheio.', image: './produtos/conchiglione_frango_com_requeijao.png' },
+            { id: 26, category: 'recheadas', name: 'Conchiglione Presunto e Mussarela', weight: '500g', price: 39.90, desc: 'Massa em formato de concha recheada.', image: './produtos/conchiglione_presunto_e_mussarela.png' },
+            { id: 27, category: 'recheadas', name: 'Conchiglione Quatro Queijos', weight: '500g', price: 39.90, desc: 'Sabor intenso de queijos.', image: './produtos/conchiglione_quatro_queijos.png' },
+
+            // Recheadas - Sofiatelli
+            { id: 28, category: 'recheadas', name: 'Sofiatelli de Espinafre', weight: '500g', price: 39.90, desc: 'Elegância e sabor no prato.', image: './produtos/sofiatelli_de_espinafre.png' },
+            { id: 29, category: 'recheadas', name: 'Sofiatelli de Queijo', weight: '500g', price: 39.90, desc: 'Massa delicada recheada com queijo.', image: './produtos/sofiatelli_de_queijo.png' },
+            { id: 30, category: 'recheadas', name: 'Sofiatelli Quatro Queijos', weight: '500g', price: 39.90, desc: 'O requinte dos quatro queijos.', image: './produtos/sofiatelli_quatro_queijos.png' },
         ];
 
         const ProductCard = ({ product }) => {
